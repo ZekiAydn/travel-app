@@ -60,65 +60,61 @@ const HotelList: React.FC<HotelListProps> = ({ hotels }) => {
                             </div>
 
                             {/* Hotel Details Section */}
+                            {/* Hotel Details Section */}
                             <div className="flex flex-col sm:flex-row justify-between mt-4 space-y-4 sm:space-y-0">
-                                <div className="space-y-2">
+                                {/* Sol Kısım: Otel Detayları */}
+                                <div className="flex-1 space-y-4">
                                     {/* Adults and Children Info */}
                                     <div className="flex items-center">
                                         <UserOutlined />
                                         <span className="ml-2 text-sm font-light text-gray-500">
-                                            {`${hotel.adults} ${t("adults")} - ${hotel.children} ${t("children")}`}
-                                        </span>
+        {`${hotel.adults} ${t("adults")} - ${hotel.children} ${t("children")}`}
+      </span>
                                     </div>
 
                                     {/* Date Info */}
                                     <div className="flex items-center">
                                         <CalendarOutlined />
-                                        <span className="ml-2 text-sm font-light text-gray-500">
-                                            {hotel.date}
-                                        </span>
+                                        <span className="ml-2 text-sm font-light text-gray-500">{hotel.date}</span>
                                     </div>
 
                                     {/* Nights Info */}
                                     <div className="flex items-center">
                                         <MoonOutlined />
-                                        <span className="ml-2 text-sm font-light text-gray-500">
-                                            {`${hotel.nights} ${t("nights")}`}
-                                        </span>
+                                        <span className="ml-2 text-sm font-light text-gray-500">{`${hotel.nights} ${t("nights")}`}</span>
                                     </div>
 
                                     {/* Amenities Info */}
                                     <div className="flex items-center">
                                         <BoxPlotOutlined />
-                                        <span className="ml-2 text-sm font-light text-gray-500">
-                                            {hotel.amenities}
-                                        </span>
+                                        <span className="ml-2 text-sm font-light text-gray-500">{hotel.amenities}</span>
                                     </div>
                                 </div>
 
-                                {/* Divider on Larger Screens */}
-                                <Divider type="vertical" className="hidden sm:block h-32 bg-gray-300" />
+                                {/* Divider */}
+                                <Divider type="vertical" className="hidden sm:block h-auto bg-gray-300 mx-4" />
 
-                                {/* Pricing and Button Section */}
-                                <div className="flex flex-col items-end sm:items-start lg:items-end mt-4 sm:mt-0 w-full sm:w-1/2">
-                                    {/* Original Price (Strikethrough) */}
-                                    <div className="text-gray-400 text-sm line-through text-end">
-                                        {hotel.originalPrice}
+                                {/* Sağ Kısım: Fiyat ve Buton */}
+                                <div className="flex-1 flex flex-col self-end">
+                                    {/* Fiyat Bilgisi */}
+                                    <div>
+                                        <div className="text-gray-400 text-sm line-through text-end">{hotel.originalPrice}</div>
+                                        <div className="flex items-center justify-end">
+                                            <div className="text-xs text-gray-500 mr-1">{t("fromPP")}</div>
+                                            <div className="text-xl font-bold text-gray-500">{hotel.price}</div>
+                                        </div>
                                     </div>
 
-                                    {/* Price and 'Continue' Button */}
-                                    <div className="flex flex-row w-full justify-end">
-                                        <div className="text-xs text-gray-500 mr-1">{t("fromPP")}</div>
-                                        <div className="text-xl font-bold text-gray-500">{hotel.price}</div>
-                                    </div>
-
+                                    {/* Buton */}
                                     <Button
                                         type="primary"
-                                        className="bg-orange-500 hover:bg-orange-600 font-semibold mt-2 rounded-md w-full sm:w-auto"
+                                        className="bg-orange-500 hover:bg-orange-600 font-semibold rounded-md mt-4 sm:mt-0 w-full sm:w-auto"
                                     >
                                         {t("continue")}
                                     </Button>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 ))
