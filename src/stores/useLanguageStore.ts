@@ -14,7 +14,7 @@ interface LanguageStore {
 
 export const useLanguageStore = create<LanguageStore>((set) => ({
     language: 'en',
-    translations: translations as Record<string, Translation>, // Typing `translations.json` as `Record<string, Translation>`
+    translations: translations as Record<string, Translation>,
 
     setLanguage: (language: string) => set({ language }),
 

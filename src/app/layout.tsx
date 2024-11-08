@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import "@/styles/globals.css";
 import TopHeader from "@/app/components/TopHeader";
 import Header from "@/app/components/Header";
-import QueryProvider from "@/app/providers/QueryProvider"; // QueryProvider bileşenini içe aktardık
+import QueryProvider from "@/app/providers/QueryProvider";
 
 interface LayoutProps {
     children: ReactNode;

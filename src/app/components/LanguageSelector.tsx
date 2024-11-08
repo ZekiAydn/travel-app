@@ -10,7 +10,7 @@ const LanguageSelector = () => {
     const { language, setLanguage } = useLanguageStore(); // Access Zustand store
 
     const handleMenuClick: MenuProps['onClick'] = ({ key }) => {
-        setLanguage(key); // Update locale in Zustand store
+        setLanguage(key);
     };
 
     const menu = (
