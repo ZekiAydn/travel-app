@@ -60,7 +60,6 @@ const HotelList: React.FC<HotelListProps> = ({ hotels }) => {
                             </div>
 
                             {/* Hotel Details Section */}
-                            {/* Hotel Details Section */}
                             <div className="flex flex-col sm:flex-row justify-between mt-4 space-y-4 sm:space-y-0">
                                 {/* Sol Kısım: Otel Detayları */}
                                 <div className="flex-1 space-y-4">
@@ -95,7 +94,7 @@ const HotelList: React.FC<HotelListProps> = ({ hotels }) => {
                                 <Divider type="vertical" className="hidden sm:block h-auto bg-gray-300 mx-4" />
 
                                 {/* Sağ Kısım: Fiyat ve Buton */}
-                                <div className="flex-1 flex flex-col self-end">
+                                <div className="flex-1 flex flex-col self-end w-full">
                                     {/* Fiyat Bilgisi */}
                                     <div>
                                         <div className="text-gray-400 text-sm line-through text-end">{hotel.originalPrice}</div>
