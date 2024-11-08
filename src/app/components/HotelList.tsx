@@ -26,12 +26,12 @@ const HotelList: React.FC<HotelListProps> = ({ hotels }) => {
     const { t } = useLanguageStore();
 
     return (
-        <div className="w-full lg:w-3/4">
+        <div className="w-full lg:w-full">
             {hotels.length > 0 ? (
                 hotels.map((hotel, index) => (
                     <div
                         key={index}
-                        className="bg-white p-4 lg:p-6 flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 mb-6 rounded-lg"
+                        className="bg-white flex flex-col lg:flex-row lg:space-x-6 space-y-4 lg:space-y-0 mb-6 rounded-lg"
                     >
                         {/* Image Section */}
                         <div className="w-full lg:w-1/2 mb-4 lg:mb-0">

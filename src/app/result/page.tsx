@@ -47,14 +47,14 @@ export default function ResultPage() {
 
     return (
         <Layout>
-            <div className="container mx-auto px-4 my-10 flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-8 mb-20">
+            <div className="container mx-auto my-10 flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-8 mb-20">
 
-                <div className="w-full lg:w-1/4">
+                <div className="w-full lg:w-1/4 lg:p-0 p-6">
                     <FilterSidebar />
                 </div>
 
 
-                <div className="w-full lg:w-3/4">
+                <div className="w-full lg:w-3/4 lg:p-0 p-6 ">
                     <HotelList hotels={filteredData || []} />
                 </div>
             </div>
