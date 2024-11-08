@@ -120,12 +120,15 @@ body {
   --hover-color: #ff7a00;
 }
 
-a:hover,
-button:hover,
-.ant-btn:hover,
-.ant-radio-button-wrapper:hover,
-.ant-checkbox:hover {
+
+.ant-radio-button-wrapper:hover{
   color: var(--hover-color) !important;
   border-color: var(--hover-color) !important;
   background-color: rgba(255, 122, 0, 0.1) !important;
+}
+@media (max-width: 768px) {
+  .responsive-header {
+    background-color: white;
+    border: none;
+  }
 }
