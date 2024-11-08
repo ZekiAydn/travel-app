@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ant-radio-button-wrapper-checked {
+  color: black !important;
+  border-color: transparent !important;
+  background-color: #fff !important;
+}
+.ant-radio-button-checked {
+  color: black !important;
+  border-color: transparent !important;
+  background-color: #fff !important;
+  border-radius: 8px;
+}
+
+.custom-ratio-input :where(.css-dev-only-do-not-override-apn68).ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #ff7a00;
+  background-color: #ff7a00;
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked {
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.custom-radio-button {
+  border-radius: 8px;
+}
+
+.custom-radio-button:hover {
+  background-color: #f0f0f0;
+  color: #000
+}
+.custom-radio-group :where(.css-dev-only-do-not-override-apn68).ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled)::before {
+  background-color: transparent !important;
+}
+.custom-checkbox .ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #ff7a00;
+  border-color: #ff7a00;
+}
+.custom-checkbox .ant-checkbox-wrapper:hover .ant-checkbox-inner,
+.custom-checkbox .ant-checkbox:hover .ant-checkbox-inner {
+  border-color: #ff7a00;
+  background-color: #ff7a00;
+}
+
+.custom-search-button:hover {
+  background-color: #e16b00 !important;
+}
+/* filter-sidebar-container.css */
+.filter-sidebar {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.filter-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #4a5568;
+}
+
+.filter-item {
+  margin-bottom: 16px;
+}
+
+.filter-label {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 8px;
+}
+
+.filter-input {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #e1e1e1;
+  padding: 8px;
+}
+
+.filter-icon {
+  color: #4a5568;
+  margin-right: 8px;
+  font-size: 1.2rem;
+}
+
+.filter-radio-group .ant-radio-wrapper {
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem;
+}
+
+.star-icon {
+  color: #ffa500;
+  margin-right: 4px;
+}
+
+:root {
+  --hover-color: #ff7a00;
+}
+
+a:hover,
+button:hover,
+.ant-btn:hover,
+.ant-radio-button-wrapper:hover,
+.ant-checkbox:hover {
+  color: var(--hover-color) !important;
+  border-color: var(--hover-color) !important;
+  background-color: rgba(255, 122, 0, 0.1) !important;
+}
